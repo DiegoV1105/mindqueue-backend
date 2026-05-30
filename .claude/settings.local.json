@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\dialv\\\\Documents\\\\GitHub\\\\mindqueue-backend\" -Force)",
+      "Bash(Select-Object Name, FullName)",
+      "Bash(Format-List)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\dialv\\\\Documents\\\\GitHub\\\\mindqueue-backend\\\\app\" -Recurse -File | Where-Object {$_.Name -notmatch \"\\\\.pyc\"} | Select-Object FullName)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\dialv\\\\Documents\\\\GitHub\\\\mindqueue-frontend\" -Recurse)",
+      "Bash(Select-Object -Property FullName)",
+      "Bash(ConvertTo-Json)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(git *)",
+      "Read(//c/Users/dialv/Documents/GitHub/mindqueue-frontend/**)"
+    ]
+  }
+}
